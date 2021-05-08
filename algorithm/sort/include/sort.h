@@ -10,12 +10,12 @@ public:
 	virtual ~Sort() {};
 
 	virtual void sort(T* data, int length) = 0;
-
-	bool less(T v, T w);
-	void exch(T* data, int i, int j);
 	void show(T* data, int length);
 	bool isSorted(T* data, int length);
 
+protected:
+	bool less(T v, T w);
+	void exch(T* data, int i, int j);
 };
  
 
